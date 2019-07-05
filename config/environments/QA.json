@@ -1,0 +1,17 @@
+{
+	"title" : "Golang Micro Web Service Manager (QA)",
+	"version" : "v1",
+	"http" : {
+		"enable" : true,
+		"port" : 3000
+	},
+	"https": {
+		"options" : {
+			"key" : null,
+			"cert" : null
+		},
+		"enable" : false,
+		"port" : 3043
+	},
+	"auth" : "required"
+}
