@@ -67,7 +67,7 @@ Every RESTful Web services need the security and validation before going to hit 
 
 #### 5. Host Web pages    
 
-    Go Micro Service Manager helps to host static web pages in the Node server with dynamic web title based on the environments.
+    Go Micro Service Manager helps to host static web pages in the HTTP server with dynamic web title based on the environments.
 
 ## How to run this Go Micro Services server?
 
