@@ -4,10 +4,10 @@ Simple Golang Micro Manager is useful to create RestFul web services using Golan
 ## Features:
 
 1. Environment setup (Like Development, QA, Production)
-2. API Versioning (WIP)
-3. Middleware configuration (WIP)
-4. Basic Security (WIP)
-5. Supports for HTTP request methods (GET, PUT, POST, DELETE)
+2. API Versioning
+3. Middleware Authentication Layer
+4. Supports for HTTP request methods (GET, PUT, POST, DELETE)
+5. Host Web Pagess
 
 
 #### 1. Environment setup
@@ -37,10 +37,40 @@ Under environments folder created three different config files to achieve the En
 
 #### 2. API Version
 
-Configure the API version numbe based on the environments JSON file.
+Configure the API version number based on the environments JSON file.
 
 E.g., `DEV.json` is helpful achieve the API versioning to register web services based on the version number.
 
 ```golang
     http://<webserver>/<version>/<webservice>        
 ```
+
+#### 3. Middleware Authentication Layer
+
+Every RESTful Web services need the security and validation before going to hit the server business logic's. Go Micro Service Manager helps to implement the basic security and validate the request headers.
+
+    For the different environments, We can able to provide a different kind of security implementation using over security implementation.
+
+        -   DEV environment is by-pass the security validation.
+        -   QA and Production environments are required the security validation. 
+
+    If it's QA and Production environments, Request Header must be.
+
+        - authorization = "bybass"
+        - content-type  = "application/json"
+        - date          = "1454577924104"     - UTC time.
+
+#### 4. Supports for HTTP request methods (GET, PUT, POST, DELETE)    
+
+    Go Micro Service Manager helps to support the four types of HTTP request methods.
+
+
+#### 5. Host Web pages    
+
+    Go Micro Service Manager helps to host static web pages in the Node server with dynamic web title based on the environments.
+
+## How to run this Go Micro Services server?
+
+-   Need to install Go & Set the GOPATH
+-   Open terminal and check the Go version
+-   Run the Go HTTP server by 'go run main.go DEV' command (Like DEV, QA and PROD)

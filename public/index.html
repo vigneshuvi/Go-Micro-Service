@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="apple-touch-icon" sizes="57x57" href="./favicon.ico/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./favicon.ico/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./favicon.ico/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./favicon.ico/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./favicon.ico/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./favicon.ico/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./favicon.ico/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./favicon.ico/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon.ico/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./favicon.ico/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon.ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./favicon.ico/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon.ico/favicon-16x16.png">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./favicon.ico/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Go</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/page.css" type="text/css" >
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/validate.js"></script>
+</head>
+<body data-spy="scroll" data-target="#myNavbar" data-offset="70">
+<nav id="myNavbar" class="navbar navbar-inverse navbar-fixed-top navbar-custom" role="navigation">
+    <div class="container" id="navbar-custom">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Go Micro Service Manager</a>
+        </div>
+    </div>
+</nav>
+<div class="container">
+	<div id="uvi-webservice-list">
+        <h2>Web Service List</h2>
+        <table class="table table-hover">
+            <thead class="company-heading">
+            <tr>
+                <th class="table-header-center">URL</th>
+                <th class="table-header-center">Method</th>
+                <th class="table-header-center">Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="current-company">
+                <td>http://localhost:3000/v1/user</td>
+                <td>POST</td>
+                <td>Create based on request.</td>
+            </tr>
+            <tr>
+                <td>http://localhost:3000/v1/user/id="test"</td>
+                <td>PUT</td>
+                <td>Update based on request id.</td>
+            </tr>
+            <tr >
+                <td>http://localhost:3000/v1/user </td>
+                <td>GET</td>
+                <td>Fetch all based on request.</td>
+            </tr>
+            <tr>
+                <td>http://localhost:3000/v1/user/id="test"</td>
+                <td>GET</td>
+                <td>Fetch based on request id.</td>
+            </tr>
+            <tr>
+                <td>http://localhost:3000/v1/user/id="test" </td>
+                <td>DELETE</td>
+                <td>Delete based on request id. </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <hr>
+    <div id="uvi-webservice-test">
+        <h2>Test Environment</h2>
+        <div>
+            <p>The following environment helps to test the applicaiton.</p>
+        </div>
+        <div class="col-xs-12">
+             <div class="btn-group" role="group" aria-label="API">
+			  <button id="uviCreate" type="button" class="btn btn-default">Create</button>
+			  <button id="uviUpdate" type="button" class="btn btn-default">Update</button>
+			  <button id="uviShow" type="button" class="btn btn-default">Show</button>
+			  <button id="uviShowAll" type="button" class="btn btn-default">Show All</button>
+			  <button id="uviDelete" type="button" class="btn btn-default">Delete</button>
+			</div>
+        </div>
+        <br>
+        <div class="col-xs-12" >
+                <label for = "name">API Response</label>
+      			<textarea id="uviResult" class = "form-control" rows = "2"style="height:80px;"></textarea>
+        </div>
+		<br>
+        <br>
+    </div>
+    <hr>
+    <br>
+    <div id="uvi-contact">
+        <h2>Contact</h2>
+        <div>
+            <p><a href="mailto:vigneshuvi@gmail.com">vigneshuvi@gmail.com</a></p>
+            <!-- - I prefer email to set up calls as I don't have a secretary! -->
+            <p><a href="tel:+919578002867" class="phone">+91 9578002867</a> </p>
+        </div>
+        <br>
+        <a  data-toggle="tooltip" title="Facebook" href="https://facebook.com/vigneshuvi" target="_blank" class="social"><img src="images/ic_fb.png" width="36" height="36" draggable="false"></a>
+        <a data-toggle="tooltip" title="Stack Overflow" href="http://stackoverflow.com/users/2586904/vignesh-kumar?tab=profile" target="_blank" class="social "><img src="images/ic_so.png" width="36" height="36" draggable="false"></a>
+        <a data-toggle="tooltip" title="LinkedIn" href="https://www.linkedin.com/in/vignesh-kumar-62a35254" target="_blank" class="social"><img src="images/ic_li.png" width="36" height="36" draggable="false"></a>
+        <a data-toggle="tooltip" title="GitHub" href="https://github.com/vigneshuvi" target="_blank" class="social"><img src="images/ic_git.png" width="36" height="36" draggable="false"></a>
+        <a data-toggle="tooltip" title="Skype" href="skype:vignesh.uvi?call" target="_blank" class="social"><img src="images/ic_skype.png" width="36" height="36" draggable="false"></a>
+    </div>
+</div>
+<div> <br></div>
+<div class="pageFooter">
+    <div class="pageFooterTitle">Copyright © 2016 Vignesh</div>
+</div>
+	<script type = "text/javascript" language = "javascript">
+         $(document).ready(function() {
+            uviWSUtil.init();
+         });
+      </script>
+</body>
+</html>                                		

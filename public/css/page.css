@@ -1,0 +1,226 @@
+/**
+ * Created by Vignesh on 12/10/15.
+ */
+
+body{
+    position: relative; /* required */
+    padding-top: 70px;	/* prevent content to go underneath the fixed navbar */
+}
+.bottom-border {
+    border-style: solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: dotted gray;
+}
+.img-thumbnail{
+    height: 80px;
+}
+
+.pageFooter {
+    left: 0px;
+    right: 0px;
+    height: 30px;
+    bottom: 0;
+    position: relative;
+    margin: 0px auto;
+    background-color: lightslategray;
+}
+
+.pageFooterTitle {
+    padding: 8px;
+    height: 20px;
+    font-size: 12px;
+    text-align: center;
+    margin: 0px auto;
+    left: 0px;
+    right: 0px;
+    color: gainsboro;
+}
+
+
+p,h1,h2,.icon-bar,li,.navbar-brand,table,tr,td,th,.pageFooterTitle,button,form,input {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+p {
+    text-align: justify;
+}
+
+.button-color{
+    color: #003366 ;
+    border-color: lightslategray;
+}
+
+textarea {
+    resize: none;
+}
+.column-1-of-2 {
+    width: 50%;
+}
+
+.column-2-of-2 {
+
+}
+.company-heading {
+    background-color: lightgray;
+}
+.current-company {
+    color: red;
+}
+
+.table-header-center {
+    text-align: center;
+}
+
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+  box-shadow: 0 2px 2px gray, 0 1px 2px gray;
+}
+
+.social:hover  {
+    -webkit-animation: rotate 1s;
+    animation: rotate 1s;
+}
+
+@-webkit-keyframes rotate {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.navbar-custom {
+    background-color: #e6263d;
+    border-color: #d3182f;
+    background-image: -webkit-gradient(linear, left 0%, left 100%, from(#eb5466), to(#e6263d));
+    background-image: -webkit-linear-gradient(top, #eb5466, #e6263d);
+    background-image: -moz-linear-gradient(top, #eb5466 0%, #e6263d 100%);
+    background-image: linear-gradient(to bottom, #eb5466 0%, #e6263d 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffeb5466', endColorstr='#ffe6263d', GradientType=0);
+}
+.navbar-custom .navbar-brand {
+    color: #ffffff;
+}
+.navbar-custom .navbar-brand:hover,
+.navbar-custom .navbar-brand:focus {
+    color: #e6e6e6;
+    background-color: transparent;
+}
+.navbar-custom .navbar-text {
+    color: #ffffff;
+}
+.navbar-custom .navbar-nav > li:last-child > a {
+    border-right: 1px solid #d3182f;
+}
+.navbar-custom .navbar-nav > li > a {
+    color: #ffffff;
+    border-left: 1px solid #d3182f;
+}
+.navbar-custom .navbar-nav > li > a:hover,
+.navbar-custom .navbar-nav > li > a:focus {
+    color: #c9baba;
+    background-color: transparent;
+}
+.navbar-custom .navbar-nav > .active > a,
+.navbar-custom .navbar-nav > .active > a:hover,
+.navbar-custom .navbar-nav > .active > a:focus {
+    color: #c9baba;
+    background-color: #d3182f;
+    background-image: -webkit-gradient(linear, left 0%, left 100%, from(#d3182f), to(#e8364b));
+    background-image: -webkit-linear-gradient(top, #d3182f,#e8364b);
+    background-image: -moz-linear-gradient(top, #d3182f 0%, #e8364b 100%);
+    background-image: linear-gradient(to bottom, #d3182f 0%, #e8364b 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffd3182f', endColorstr='#ffe8364b', GradientType=0);
+}
+.navbar-custom .navbar-nav > .disabled > a,
+.navbar-custom .navbar-nav > .disabled > a:hover,
+.navbar-custom .navbar-nav > .disabled > a:focus {
+    color: #cccccc;
+    background-color: transparent;
+}
+.navbar-custom .navbar-toggle {
+    border-color: lightslategray;
+}
+.navbar-custom .navbar-toggle:hover,
+.navbar-custom .navbar-toggle:focus {
+    background-color: #d3182f;
+}
+.navbar-custom .navbar-toggle .icon-bar {
+    background-color: #cccccc;
+}
+.navbar-custom .navbar-collapse,
+.navbar-custom .navbar-form {
+    border-color: #d0182e;
+}
+.navbar-custom .navbar-nav > .dropdown > a:hover .caret,
+.navbar-custom .navbar-nav > .dropdown > a:focus .caret {
+    border-top-color: #c9baba;
+    border-bottom-color: #c9baba;
+}
+.navbar-custom .navbar-nav > .open > a,
+.navbar-custom .navbar-nav > .open > a:hover,
+.navbar-custom .navbar-nav > .open > a:focus {
+    background-color: #d3182f;
+    color: #c9baba;
+}
+.navbar-custom .navbar-nav > .open > a .caret,
+.navbar-custom .navbar-nav > .open > a:hover .caret,
+.navbar-custom .navbar-nav > .open > a:focus .caret {
+    border-top-color: #c9baba;
+    border-bottom-color: #c9baba;
+}
+.navbar-custom .navbar-nav > .dropdown > a .caret {
+    border-top-color: #ffffff;
+    border-bottom-color: #ffffff;
+}
+@media (max-width: 767px) {
+    .navbar-custom .navbar-nav .open .dropdown-menu > li > a {
+        color: #ffffff;
+    }
+    .navbar-custom .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-custom .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #c9baba;
+        background-color: transparent;
+    }
+    .navbar-custom .navbar-nav .open .dropdown-menu > .active > a,
+    .navbar-custom .navbar-nav .open .dropdown-menu > .active > a:hover,
+    .navbar-custom .navbar-nav .open .dropdown-menu > .active > a:focus {
+        color: #c9baba;
+        background-color: #d3182f;
+    }
+    .navbar-custom .navbar-nav .open .dropdown-menu > .disabled > a,
+    .navbar-custom .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+    .navbar-custom .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+        color: #cccccc;
+        background-color: transparent;
+    }
+}
+.navbar-custom .navbar-link {
+    color: #ffffff;
+}
+.navbar-custom .navbar-link:hover {
+    color: #c9baba;
+}
+
+.navbar-header {
+    float: left;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+}
+.navbar-brand {float:none;}
+
+
+textarea:focus, input:focus, .uneditable-input:focus {
+    border-color: lightslategray !important;
+    box-shadow: 0 1px 1px lightslategray inset, 0 0 8px lightslategray !important;
+    outline: 0 none !important;
+}
