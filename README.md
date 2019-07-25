@@ -79,7 +79,7 @@ Go Micro Service Manager helps to host static web pages in the HTTP server with 
 
 -   Need to install Go & Set the GOPATH
 -   Open terminal and check the Go version
--   Run the Go HTTP server by 'go run main.go DEV' command (Like DEV, QA and PROD)
+-   Run the Go HTTP server by `go run main.go DEV` command (Like DEV, QA and PROD)
 
 ![alt text][start-go-http-server]
 
@@ -88,8 +88,8 @@ Go Micro Service Manager helps to host static web pages in the HTTP server with 
 #### How to run unit test and see the code coverage?
 
 -   Open terminal and move to Go-Micro-Service folder
--	Run 'go test ./... -coverprofile=coverage.out' to generate coverage profile
--   Seeing coverage output in html file use 'go tool cover -html=coverage.out'
+-	Run `go test ./... -coverprofile=coverage.out` to generate coverage profile
+-   Seeing coverage output in html file use `go tool cover -html=coverage.out`
 
 ![alt text][code-coverage]
 
