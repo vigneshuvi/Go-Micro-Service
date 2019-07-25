@@ -81,7 +81,7 @@
 
 ![alt text][start-go-http-server]
 
-[astart-go-http-server]: https://github.com/vigneshuvi/Go-Micro-Service/blob/master/public/images/start-go-http-server.png
+[start-go-http-server]: https://github.com/vigneshuvi/Go-Micro-Service/blob/master/public/images/start-go-http-server.png
 
 ## How to run unit test and see the code coverage?
 
@@ -89,7 +89,7 @@
 -	Run 'go test ./... -coverprofile=coverage.out' to generate coverage profile
 -   Seeing coverage output in html file use 'go tool cover -html=coverage.out'
 
-![alt text][code-coveragecle]
+![alt text][code-coverage]
 
 [code-coverage]: https://github.com/vigneshuvi/Go-Micro-Service/blob/master/public/images/code-coverage.png
 
