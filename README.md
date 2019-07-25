@@ -8,7 +8,8 @@ Simple Golang Micro Manager is useful to create RestFul web services using Golan
 2. API Versioning
 3. Middleware Authentication Layer
 4. Supports for HTTP request methods (GET, PUT, POST, DELETE)
-5. Host Web Pagess
+5. Host Web Pages
+6. Code Coverage (Unit testing)
 
 
 #### 1. Environment setup
@@ -16,25 +17,25 @@ Simple Golang Micro Manager is useful to create RestFul web services using Golan
 Web Service basics have to support multiple environments like development, QA, Production environment and Configured in the generic format.
 Under environments folder created three different config files to achieve the Environment setup.
 
-	```json
-	{
-		"title" : "Golang Micro Web Service Manager (DEV)",
-		"version" : "v1",
-		"http": {
-			"enable" : true,
-			"port" : 3000	
+```json
+{
+	"title" : "Golang Micro Web Service Manager (DEV)",
+	"version" : "v1",
+	"http": {
+		"enable" : true,
+		"port" : 3000	
+	},
+	"https": {
+		"options" : {
+			"key" : null,
+			"cert" : null
 		},
-		"https": {
-			"options" : {
-				"key" : null,
-				"cert" : null
-			},
-			"enable" : false,
-			"port" : 3043
-		},
-		"auth" : "bypass"
-	}
-	```
+		"enable" : false,
+		"port" : 3043
+	},
+	"auth" : "bypass"
+}
+```
 
 #### 2. API Version
 
@@ -42,9 +43,9 @@ Configure the API version number based on the environments JSON file.
 
 E.g., `DEV.json` is helpful achieve the API versioning to register web services based on the version number.
 
-	```golang
-    	http://<webserver>/<version>/<webservice>        
-	```
+```golang
+	http://<webserver>/<version>/<webservice>        
+```
 
 #### 3. Middleware Authentication Layer
 
@@ -99,11 +100,11 @@ Go Micro Service Manager helps to host static web pages in the HTTP server with 
 
 -  If you set up the node environment is `DEV`, then you can directly test it from RESTful Client.
 
-	http://localhost:3000/v1/user             - Show All -  Fetch all based on request.
-	http://localhost:3000/v1/user?id="test"   - Show     -  Fetch based on request id. 
-	http://localhost:3000/v1/user?id="test"   - PUT      -  Update based on request id. 
-	http://localhost:3000/v1/user             - POST     -  Create based on request.
-	http://localhost:3000/v1/user:id="test"   - DELETE   -  Update based on request id.
+		http://localhost:3000/v1/user             - Show All -  Fetch all based on request.
+		http://localhost:3000/v1/user?id="test"   - Show     -  Fetch based on request id. 
+		http://localhost:3000/v1/user?id="test"   - PUT      -  Update based on request id. 
+		http://localhost:3000/v1/user             - POST     -  Create based on request.
+		http://localhost:3000/v1/user:id="test"   - DELETE   -  Update based on request id.
 
 
 #### Do you like it?
