@@ -69,9 +69,9 @@
 
     Go Micro Service Manager helps to host static web pages in the HTTP server with dynamic web title based on the environments.
 
-	![alt text][api_test_environment]
+![alt text][api_test_environment]
 
-	[api_test_environment]: https://github.com/vigneshuvi/Go-Micro-Service/blob/master/public/images/api_test_environment.png
+[api_test_environment]: https://github.com/vigneshuvi/Go-Micro-Service/blob/master/public/images/api_test_environment.png
 
 ## How to run this Go Micro Services server?
 
@@ -79,9 +79,9 @@
 -   Open terminal and check the Go version
 -   Run the Go HTTP server by 'go run main.go DEV' command (Like DEV, QA and PROD)
 
-	![alt text][start-go-http-server]
+![alt text][start-go-http-server]
 
-	[astart-go-http-server]: https://github.com/vigneshuvi/Go-Micro-Service/blob/master/public/images/start-go-http-server.png
+[astart-go-http-server]: https://github.com/vigneshuvi/Go-Micro-Service/blob/master/public/images/start-go-http-server.png
 
 ## How to run unit test and see the code coverage?
 
@@ -89,9 +89,9 @@
 -	Run 'go test ./... -coverprofile=coverage.out' to generate coverage profile
 -   Seeing coverage output in html file use 'go tool cover -html=coverage.out'
 
-	![alt text][code-coveragecle]
+![alt text][code-coveragecle]
 
-	[code-coverage]: https://github.com/vigneshuvi/Go-Micro-Service/blob/master/public/images/code-coverage.png
+[code-coverage]: https://github.com/vigneshuvi/Go-Micro-Service/blob/master/public/images/code-coverage.png
 
 
 ## How to test the RESTful web service?
