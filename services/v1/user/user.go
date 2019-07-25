@@ -22,9 +22,10 @@ import ServiceModel "../../model/"
 func UserHandleRequest(res http.ResponseWriter, req *http.Request) {
 	log.Println("Incoming User Request:", req.Method)
 	path := strings.ReplaceAll(req.URL.Path[1:],"v1/user","")
-	log.Println("Incoming User Request Path:", path)
 	userId := req.URL.Query().Get("id")
-	log.Println("Incoming User Request userId:", userId)
+	if len(userId) > 0 {
+		log.Println("Incoming User Request userId:", userId)
+	}
 
 	switch req.Method {
 	case http.MethodGet:

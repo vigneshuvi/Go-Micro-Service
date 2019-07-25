@@ -151,7 +151,7 @@ func TestDeleteByUsernameHandler(t *testing.T) {
     }
 
     // Check the response body is what we expect.
-    expected := `{"status":true,"data":{"firstname":"vignesh","lastname":"kumar","username":"vigneshuvi","roletype":1,"rolename":"admin"},"message":"successfully hit the Update user webservice."}`
+    expected := `{"status":true,"data":{"firstname":"vignesh","lastname":"kumar","username":"vigneshuvi","roletype":2,"rolename":"manager"},"message":"successfully hit the Delete webservice."}`
     if rr.Body.String() != expected {
         t.Errorf("SERVICES ERROR: Handler returned unexpected body: got %v want %v",
             rr.Body.String(), expected)
